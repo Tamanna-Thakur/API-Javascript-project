@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search word</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js" defer></script>
+</head>
+<body>
+    <div class="search-container">
+     <div class="search-input">
+        <input type="text" placeholder="Type the word here">
+        <button type="submit">search</button>
+     </div>
+       <p class="empty"><b>Please Enter the  any word</b></p>
+
+     <div class="error-container">
+        <h1 class="title-error"><i> 0ops No Definitions Found !!!</i></h1>
+     </div>
+
+
+
+     <div class="result-container">
+        <div class="word-container">
+            <h2 class="word"><b>Serence</b></h2>
+         <button class="soundbtn">
+            <i class="fa-solid fa-volume-high"></i>
+            <audio class="sound"></audio>
+        </button>
+         </div>
+     
+         <div class="details">
+            <p class="verb">pos</p>
+            <p class="pronouns">/sample/</p>
+         </div>
+         <p class="def-meaning">calm,peaceful,and,untroubled;tranquil</p>  
+      
+         <div class="sentence-container">
+             <p class="sentence"><i>that is the sentence of word</i></p>
+         </div>
+     </div>
+   
+    </div>
+</body>
+</html>

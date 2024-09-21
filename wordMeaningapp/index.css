@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(90, 57, 134);
+}
+.result-container {
+  display: none;
+}
+.result-container.showResult {
+  display: block;
+}
+.search-container {
+  width: 500px;
+  background-color: white;
+  padding-block: 20px;
+  padding-inline: 28px;
+  border-radius: 5px;
+}
+.search-input {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.search-input input {
+  width: 276px;
+  padding: 9px;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-color: rgb(90, 57, 134);
+  font-size: 18px;
+}
+.search-input button {
+  width: 120px;
+  padding: 14px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(90, 57, 134);
+  color: #fff;
+  font-size: 18px;
+}
+.word-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 54px;
+  margin-bottom: 10px;
+}
+.word-container p {
+  font-size: 18px;
+  font-weight: 1200;
+}
+.word-container i {
+  font-size: 22px;
+  color: rgb(90, 57, 134);
+  border: solid 1x black;
+}
+.word-container button {
+  border: none;
+}
+
+.sentence-container {
+  width: 443px;
+  margin-top: 25px;
+  padding-block: 2px;
+  padding-left: 25px;
+  border-left: solid 2px rgb(90, 57, 134);
+}
+.details {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  color: #a9accf;
+  font-size: 17px;
+}
+.error-container {
+  margin-top: 50px;
+  display: none;
+}
+.error-container h1 {
+  color: rgb(90, 57, 134);
+  font-size: 20px;
+}
+.error-container.show-error {
+  display: block;
+}
+.empty {
+  color: rgb(90, 57, 134);
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+/* meadia query */
+@media (max-width: 524px) {
+  .search-container {
+    width: 367px;
+    padding-block: 16px;
+    padding-inline: 18px;
+  }
+  .search-input input {
+    width: 204px;
+    padding: 9px;
+  }
+  .search-input button {
+    width: 108px;
+    padding: 9px;
+  }
+  .empty {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .search-container {
+    width: 324px;
+    padding-block: 16px;
+    padding-inline: 18px;
+  }
+  .search-input input {
+    width: 191px;
+    padding: 9px;
+  }
+  .search-input button {
+    width: 108px;
+    padding: 9px;
+  }
+  .empty {
+    margin-top: 18px;
+  }
+}
